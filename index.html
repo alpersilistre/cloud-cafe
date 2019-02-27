@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+        
+        <script src="config.js">
+            // This file is inside the config which is ignored to prevent api keys to go public.
+        </script>
+        <script>
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
