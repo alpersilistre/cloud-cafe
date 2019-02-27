@@ -99,4 +99,5 @@ button{
     font-family: ubuntu;
     letter-spacing: 1px;
     color: #999;
+    cursor: pointer;
 }
